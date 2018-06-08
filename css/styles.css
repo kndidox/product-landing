@@ -1,0 +1,53 @@
+footer {
+  height: 30px;
+  line-height: 30px;
+}
+.no-padding {
+  padding: 0px !important;
+}
+
+.aligner {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-img {
+  width: 100px;
+}
+
+#video {
+  width: 560px;
+  height: 315px;
+}
+
+#submit {
+  margin-top: 10px;
+}
+
+@media (max-width: 960px) {
+  .aligner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #video {
+    width: 280px;
+    height: 158px;
+  }
+
+  #services, #contact-us {
+    display: flex;
+  }
+
+  #services .section-image, #contact-us .section-image {
+    order: 1;
+  }
+
+  #services .section-content, #contact-us .section-content {
+    order: 2;
+  }
+}
